@@ -1,0 +1,6 @@
+data "oci_opsi_operations_insights_warehouse_resource_usage_summary" "opsi_operations_insights_warehouse_resource_usage_summary_lookup" {
+  for_each = var.opsi_operations_insights_warehouse_resource_usage_summary_lookup
+
+  operations_insights_warehouse_id = each.value.operations_insights_warehouse_id
+}
+
